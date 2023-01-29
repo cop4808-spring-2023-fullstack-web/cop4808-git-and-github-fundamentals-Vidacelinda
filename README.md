@@ -1,5 +1,4 @@
-# :Carlo Leiva 
-
+# Carlo Leiva 
 
 # :wave: The Basics of GitHub 
 
