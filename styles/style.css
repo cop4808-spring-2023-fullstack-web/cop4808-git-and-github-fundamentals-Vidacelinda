@@ -47,7 +47,13 @@ button {
     font-family: monospace;
     color: black;
 }
-
+/* added .t for back gorund color of new buttons */
+.t{ 
+    background-color: #cc546a;
+}
+.t:active {
+    background-color: #d9997b;
+}
 
 #zero {
     grid-column: span 2;
