@@ -163,6 +163,14 @@ function inputBackspace() {
     }
 }
 
+function power(base, exponent) {//added power function
+    var result = 1;
+        for(var count = 0;count < exponent; count++)
+            result *= base
+        return result;
+}
+
+
 function operate(x, y, op) {
     if(op === '+') {
         return x + y;
@@ -176,6 +184,8 @@ function operate(x, y, op) {
         } else {
         return x / y;
         }
+    } else if(op === 'xy') {//added opradn
+        return power(x,y)
     }
 }
 
