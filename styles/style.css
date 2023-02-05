@@ -57,7 +57,7 @@ button {
     background-color: #d9997b;
 }
 
-#t{ /* used Id in sted to bold and change the back gorund color */
+#t{ /* used Id insted of class to bold and change the back gorund color */
     background-color: #cc546a;
     font-size: 2.4em; /*added larger font */
     font-weight: bold;/*bold */
