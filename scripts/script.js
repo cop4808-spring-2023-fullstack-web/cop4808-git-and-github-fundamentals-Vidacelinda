@@ -168,15 +168,15 @@ function clearDisplay() {
     result = null;
 }
 
-function tan(num) {//testing 
+function tan(num) {//added
     displayValue = Math.tan(num).toString();
 }
 
-function cos(num){//testing
+function cos(num){//added 
     displayValue = Math.cos(num).toString();
 }
 
-function log(num){//testing
+function log(num){//added
     displayValue = Math.log(num).toString();
 }
 
