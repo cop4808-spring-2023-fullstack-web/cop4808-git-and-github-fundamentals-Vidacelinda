@@ -2,7 +2,7 @@
 
 Gif of calculator working
 
-![ezgif com-gif-maker-11](https://user-images.githubusercontent.com/87499194/216851417-0e1fd5cb-b44f-4417-8a86-6f1ec1e0e202.gif)
+![ezgif com-gif-maker-12](https://user-images.githubusercontent.com/87499194/216878216-4c215bd2-eba4-4480-8f5b-eed32bcc3969.gif)
 
 
 # :wave: The Basics of GitHub 
