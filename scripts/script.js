@@ -177,7 +177,7 @@ function cos(num){//added
 }
 
 function log(num){//added
-    displayValue = Math.log(num).toString();
+    displayValue = Math.log2(num).toString();
 }
 
 function inputBackspace() {
@@ -194,9 +194,6 @@ function power(base, exponent) {//added power function
         return result;
 }
 
-function getBaseLog(x, y) {//testing
-    return Math.log(y) / Math.log(x);
-}
 
 function operate(x, y, op) {
     if(op === '+') {
