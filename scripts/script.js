@@ -11,7 +11,7 @@ window.addEventListener('keydown', function(e){
     key.click();
 });
 
-function updateDisplay() {
+function updateDisplay() {//just updates the display
     const display = document.getElementById('display');
     display.innerText = displayValue;
     if(displayValue.length > 9) {
@@ -41,9 +41,20 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
                 updateDisplay();
+            } else if(buttons[i].classList.contains('cos')){//added cos(x){}
+                cos(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('tan')){//added tan(x)
+                tan(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('log'))//added tan(x)
+                log(displayValue);
+                updateDisplay();
+
+                
         }
     )}
 }
@@ -141,6 +152,7 @@ function inputDecimal(dot) {
 
 function inputPercent(num) {
     displayValue = (num/100).toString();
+    // displayValue = Math.cos(num).toString();//make this work
 }
 
 function inputSign(num) {
@@ -154,6 +166,18 @@ function clearDisplay() {
     firstOperator = null;
     secondOperator = null;
     result = null;
+}
+
+function tan(num) {//testing 
+    displayValue = Math.tan(num).toString();
+}
+
+function cos(num){//testing
+    displayValue = Math.cos(num).toString();
+}
+
+function log(num){//testing
+    displayValue = Math.log(num).toString();
 }
 
 function inputBackspace() {
@@ -170,13 +194,16 @@ function power(base, exponent) {//added power function
         return result;
 }
 
+function getBaseLog(x, y) {//testing
+    return Math.log(y) / Math.log(x);
+}
 
 function operate(x, y, op) {
     if(op === '+') {
         return x + y;
     } else if(op === '-') {
         return x - y;
-    } else if(op === '*') {
+    } else if(op === '*') {ß
         return x * y;
     } else if(op === '/') {
         if(y === 0) {
@@ -186,7 +213,10 @@ function operate(x, y, op) {
         }
     } else if(op === 'xy') {//added opradn
         return power(x,y)
+    } else if(op === 'baseLog'){
+        return getBaseLog(x,y)
     }
+
 }
 
 function roundAccurately(num, places) {
